@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="EnvelopeBudgetORMTests">
+<testsuite name="com.touchpointlabs.eb:OrmSuite" type="testsuiteclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.entity:OrmEnvelopeTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.entity:OrmRecordedTransactionTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.entity:OrmVendorTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.dao:OrmEnvelopeDaoTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.dao:OrmRecordedTransactionDaoTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.dao:OrmVendorDaoTest" type="testcaseclass"/>
+</testsuite>
+<portNumber value="8765" />
+</testrun>

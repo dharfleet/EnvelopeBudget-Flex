@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="EnvelopeBudgetORMTests">
+<testsuite name="com.touchpointlabs.eb.integration.dao:OrmRecordedTransactionDaoTest" type="testcaseclass">
+<testcase name="testCreateTransactionAndVendor" classname="com.touchpointlabs.eb.integration.dao:OrmRecordedTransactionDaoTest"/>
+</testsuite>
+</testsuite>
+<portNumber value="8765" />
+</testrun>
