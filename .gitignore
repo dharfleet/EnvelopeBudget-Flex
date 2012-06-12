@@ -3,8 +3,14 @@ bin/
 bin-debug/
 bin-release/
 
+# System Files
+.DS_Store
+
 # Project property files
 #.actionScriptProperties
 #.flexProperties
 #.settings/
 #.project
+
+.fxpTemp
+.metadata
