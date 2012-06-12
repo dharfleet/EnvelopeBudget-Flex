@@ -1,0 +1,90 @@
+End User License Agreement
+
+You will need to agree to the license agreement before you can download our Free Edition. Please read through this, and click the "I agree" button at the bottom of the page.
+
+
+Agreement Date: 06/12/2012
+Date Last Updated: 1/21/2011
+
+IMPORTANT - READ CAREFULLY: This End-User License Agreement ("Agreement") is a legal agreement between you (either an individual or single entity) and DOTCOMIT, LLC for the FLEXTRAS software that accompanies this Agreement, which includes computer software and may include associated media, printed materials, "online" or electronic documentation, and Internet-based services ("Software"). YOU AGREE TO BE BOUND BY THE TERMS OF THIS EULA BY INSTALLING, COPYING, OR OTHERWISE USING THE SOFTWARE. IF YOU DO NOT AGREE, DO NOT INSTALL COPY OR USE THE SOFTWARE.
+
+This SOFTWARE LICENSE AGREEMENT ("Agreement") is made by and between DOTCOMIT, LLC, a Connecticut Domestic Limited Liability Company with a primary office located in the Town of Meriden, County of New Haven and State of Connecticut (hereinafter referred to as "Developer") and YOU, an individual identified by your name, email address, IP address, date and time of electronic signature, (hereinafter referred to as the "Licensee").
+
+Whereas, Developer has developed and licenses to Licensees its compiled SWC files, compiled SWF files, source code, documentation, and sample applications marketed under the name "FLEXTRAS" (the "Software").
+
+Licensee desires to utilize a copy of the Software to build and distribute compiled SWF files (the "Applications").
+
+NOW, THEREFORE, in consideration of the mutual promises set forth herein, Developer and Licensee agree as follows:
+
+1. License.
+
+Developer hereby grants to Licensee a perpetual, non-exclusive, limited license to use the Software provided Licensee complies with all terms and conditions of this Agreement.
+
+2. Editions
+
+There are up to four (4) editions of the Software, and Licensee must comply with the specific restrictions of the edition they have licensed under this Agreement.
+
+a. Developer Edition: can be used by multiple Licensees on one or more computers only for the purposes of software evaluation or development and testing of applications. Developer Edition cannot be deployed into any production environments.
+
+b. Single Domain Edition: can be used by multiple Licensees on one or more computers for the purposes of development and testing of applications, or to deploy applications to a production environment associated with a single web domain. Single Domain Edition cannot be served, included, or embedded through any means, technical or otherwise, in domains for which they were not licensed.
+
+c. Unlimited Domain with Source Edition: can be used by a single Licensee to extend or modify the software. Can be used for development and testing of applications. Can be installed on one or more computers, provided that Licensee is sole user of computers for application development. Applications can be deployed into a production environment associated with any domain or to a desktop application.
+
+d. Free Edition: can be used by multiple Licensees on one or more computers for the purposes of development and testing of applications. Applications can be deployed into a production environment associated with any domain or to a desktop application. A Free Edition may not be available for all Software. The Free Edition may have a subset of features of the other editions.
+
+3. Restrictions.
+
+Licensee shall not modify, copy, duplicate, reproduce, license or sublicense the Software, or transfer or convey the Software or any right in the Software to anyone else without the prior written consent of Developer except as otherwise provided for in this Agreement; provided that Licensee may make one copy of the Software for backup or archival purposes. Licensee shall not reverse engineer the Software. Licensee shall be allowed to modify the Software only in the creation of an application. Software shall not be distributed by Licensee outside of the context of an application. In all other instances, Licensee may not modify the Software or create derivative works based upon the Software.
+
+4. Use.
+
+Licensee may use the Software to create unique applications. Licensee may modify the enclosed Sample Applications, however Developer retains ownership over all Sample Applications, whether modified or in their original form.
+
+5. Warranty of Title.
+
+Developer hereby represents and warrants to Licensee that Developer is the owner of the Software or otherwise has the right to grant to Licensee the rights set forth in this Agreement.
+
+6. Software Maintenance / Updates.
+
+Developer may, at its sole option, provide to Licensee any new, corrected or enhanced version of the Software as created by Developer.
+
+7. Warranty Disclaimer.
+
+DEVELOPER'S WARRANTIES SET FORTH IN THIS AGREEMENT ARE EXCLUSIVE AND ARE IN LIEU OF ALL OTHER WARRANTIES, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+
+8. Limitation of Liability.
+
+Developer shall not be responsible for, and shall not pay, any amount of incidental, consequential or other indirect damages, whether based on lost revenue or otherwise, regardless of whether Developer was advised of the possibility of such losses in advance. In no event shall Developer's liability hereunder exceed the amount of license fees paid by Licensee, regardless of whether Licensee's claim is based on contract, tort, strict liability, product liability or otherwise.
+
+9. Notice.
+
+Any notice required by this Agreement or given in connection with it, shall be in writing and shall be given to the appropriate party by personal delivery or by certified mail, postage prepaid, or recognized overnight delivery services.
+
+ If to Developer:
+ Email to:
+
+10. Governing Law.
+
+If the Software is used in the United States of America or by a citizen or national of the United States of America, then and in that event, this Agreement shall be construed and enforced in accordance with the laws and jurisdiction of the State of Connecticut and the United States of America.
+
+11. No Assignment.
+
+Neither this Agreement nor any interest in this Agreement may be assigned by Licensee without the prior express written approval of Developer.
+
+12. Reservation of Rights and Ownership and Final Agreement.
+
+DOTCOMIT reserves all rights not expressly granted to you in this Agreement. The Software is protected by copyright and other intellectual property laws and treaties. DOTCOMIT owns the title, copyright and other intellectual property rights in the Software. The Software is licensed, not sold. This Agreement terminates and supersedes all prior understandings or agreements on the subject matter hereof. This Agreement may be modified only by a further writing that is duly executed by both parties.
+
+13. Severability.
+
+If any term of this Agreement is held by a court of competent jurisdiction to be invalid or unenforceable, then this Agreement, including all of the remaining terms, will remain in full force and effect as if such invalid or unenforceable term had never been included.
+
+14. Headings.
+
+Headings used in this Agreement are provided for convenience only and shall not be used to construe meaning or intent.
+
+15. Termination.
+
+Without prejudice to any other rights, DOTCOMIT may terminate this Agreement if you fail to comply with the terms and conditions of this Agreement. In such event, you must destroy all copies of the Software and all of its component parts.
+
+IN WITNESS WHEREOF, Developer and Licensee have executed this Software License Agreement on the day and year first above written. 

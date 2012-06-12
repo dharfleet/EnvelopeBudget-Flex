@@ -1,0 +1,9 @@
+spicelib-license.txt
+--------------------
+
+spicelib-commands-3.1.1.swc
+spicelib-reflect-3.0.0.swc
+spicelib-util-3.1.0.swc
+spicelib-xml-mapper-3.0.2.swc
+
+
