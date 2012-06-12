@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright © 2012 Daniel Harfleet. All Rights Reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are
+permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list
+of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this
+list of conditions and the following disclaimer in the documentation and/or other
+materials provided with the distribution.
+
+3. The name of the author may not be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY The Copyright Holder "AS IS" AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<parsley:Objects xmlns:fx="http://ns.adobe.com/mxml/2009"
+				 xmlns:parsley="http://www.spicefactory.org/parsley">
+	<fx:Script>
+		<![CDATA[
+			import com.touchpointlabs.eb.domain.entity.OrmEnvelope;
+			import com.touchpointlabs.eb.integration.EntityManagerFactory;
+			import com.touchpointlabs.eb.integration.dao.OrmEnvelopeDao;
+			import com.touchpointlabs.eb.integration.dao.OrmRecordedTransactionDao;
+			import com.touchpointlabs.eb.integration.dao.OrmVendorDao;
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+
+
+		<!--
+			An IEntityManager is used by Flex ORM to access the SQLite database
+			@constructorArg the name of the database
+		-->
+		<parsley:Object id="entityManager"
+						type="{EntityManagerFactory}">
+			<parsley:ConstructorArgs>
+				<fx:String>envelope.db</fx:String>
+				<parsley:ObjectRef idRef="logFactory"/>
+				<parsley:ObjectRef idRef="databaseDirectory"/>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+		<parsley:Object id="defaultEnvelope"
+						type="{OrmEnvelope}">
+			<parsley:Property name="name"
+							  value="Default"/>
+		</parsley:Object>
+
+
+		<!--
+			An EnvelopeDAO
+			@constructorArg a Flex ORM IEntityManager instance
+		-->
+		<parsley:Object id="envelopeDAO"
+						type="{OrmEnvelopeDao}">
+			<parsley:ConstructorArgs>
+				<parsley:ObjectRef idRef="entityManager"/>
+				<parsley:ObjectRef idRef="defaultEnvelope"/>
+				<parsley:ObjectRef idRef="logFactory"/>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+		<!--
+			A VendorDAO
+			@constructorArg a Flex ORM IEntityManager instance
+		-->
+		<parsley:Object id="vendorDAO"
+						type="{OrmVendorDao}">
+			<parsley:ConstructorArgs>
+				<parsley:ObjectRef idRef="entityManager"/>
+				<parsley:ObjectRef idRef="logFactory"/>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+		<!--
+		A RecordedTransactionDAO
+		@constructorArg a Flex ORM IEntityManager instance
+		-->
+		<parsley:Object id="recordedTransactionDAO"
+						type="{OrmRecordedTransactionDao}">
+			<parsley:ConstructorArgs>
+				<parsley:ObjectRef idRef="entityManager"/>
+				<parsley:ObjectRef idRef="logFactory"/>
+				<parsley:ObjectRef idRef="vendorDAO"/>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+	</fx:Declarations>
+</parsley:Objects>

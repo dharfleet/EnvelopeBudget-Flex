@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright © 2012 Daniel Harfleet. All Rights Reserved.
+
+Redistribution and use in source and binary forms, with or without modification, are
+permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list
+of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this
+list of conditions and the following disclaimer in the documentation and/or other
+materials provided with the distribution.
+
+3. The name of the author may not be used to endorse or promote products derived from
+this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY The Copyright Holder "AS IS" AND ANY EXPRESS OR IMPLIED
+WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<parsley:Objects xmlns:fx="http://ns.adobe.com/mxml/2009"
+				 xmlns:parsley="http://www.spicefactory.org/parsley">
+	<fx:Script>
+		<![CDATA[
+			import com.touchpointlabs.eb.dao.SfEnvelopeDao;
+			import com.touchpointlabs.eb.dao.SfRecordedTransactionDaoParsleyHack;
+			import com.touchpointlabs.eb.dao.SfVendorDao;
+			import com.touchpointlabs.eb.integration.api.CommandFactory;
+			import com.touchpointlabs.eb.integration.api.authn.UserCredentials;
+			import com.touchpointlabs.sforce.rest.SalesforceOrg;
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+
+
+		<fx:String id="username">[username]</fx:String>
+		<fx:String id="password">[password]</fx:String>
+		<fx:String id="securityToken">[security-token]</fx:String>
+		<fx:String id="consumerKey">[consumer-key]</fx:String>
+		<fx:String id="consumerSecret">[consumer-secret]</fx:String>
+
+
+
+		<parsley:Object id="org"
+						type="{SalesforceOrg}">
+			<parsley:ConstructorArgs>
+				<parsley:ObjectRef idRef="consumerKey"/>
+				<parsley:ObjectRef idRef="consumerSecret"/>
+				<fx:String>v24.0</fx:String>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+		<parsley:Object id="credentials"
+						type="{UserCredentials}">
+			<parsley:ConstructorArgs>
+				<parsley:ObjectRef idRef="username"/>
+				<parsley:ObjectRef idRef="password"/>
+				<parsley:ObjectRef idRef="securityToken"/>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+		<parsley:Object id="commandFactory"
+						type="{CommandFactory}">
+			<parsley:ConstructorArgs>
+				<parsley:ObjectRef idRef="org"/>
+				<parsley:ObjectRef idRef="logFactory"/>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+		<parsley:Object id="envelopeDAO"
+						type="{SfEnvelopeDao}">
+			<parsley:ConstructorArgs>
+				<parsley:ObjectRef idRef="org"/>
+				<parsley:ObjectRef idRef="credentials"/>
+				<parsley:ObjectRef idRef="commandFactory"/>
+				<parsley:ObjectRef idRef="commandFactory"/>
+				<parsley:ObjectRef idRef="logFactory"/>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+		<parsley:Object id="vendorDAO"
+						type="{SfVendorDao}">
+			<parsley:ConstructorArgs>
+				<parsley:ObjectRef idRef="org"/>
+				<parsley:ObjectRef idRef="credentials"/>
+				<parsley:ObjectRef idRef="commandFactory"/>
+				<parsley:ObjectRef idRef="commandFactory"/>
+				<parsley:ObjectRef idRef="commandFactory"/>
+				<parsley:ObjectRef idRef="commandFactory"/>
+				<parsley:ObjectRef idRef="logFactory"/>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+		<parsley:Object id="recordedTransactionDAO"
+						type="{SfRecordedTransactionDaoParsleyHack}">
+			<parsley:ConstructorArgs>
+				<parsley:ObjectRef idRef="org"/>
+				<parsley:ObjectRef idRef="credentials"/>
+				<parsley:ObjectRef idRef="commandFactory"/>
+				<parsley:ObjectRef idRef="logFactory"/>
+			</parsley:ConstructorArgs>
+		</parsley:Object>
+
+
+	</fx:Declarations>
+</parsley:Objects>

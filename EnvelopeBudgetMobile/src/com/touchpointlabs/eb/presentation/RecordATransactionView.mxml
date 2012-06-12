@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+Copyright © 2012 Daniel Harfleet. All Rights Reserved.
+
+ Redistribution and use in source and binary forms, with or without modification, are
+ permitted provided that the following conditions are met:
+
+ 1. Redistributions of source code must retain the above copyright notice, this list
+ of conditions and the following disclaimer.
+
+ 2. Redistributions in binary form must reproduce the above copyright notice, this
+ list of conditions and the following disclaimer in the documentation and/or other
+ materials provided with the distribution.
+
+ 3. The name of the author may not be used to endorse or promote products derived from
+ this software without specific prior written permission.
+
+ THIS SOFTWARE IS PROVIDED BY The Copyright Holder "AS IS" AND ANY EXPRESS OR IMPLIED
+ WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY
+ AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE
+ LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY,
+ WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING
+ IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+-->
+<s:View xmlns:fx="http://ns.adobe.com/mxml/2009"
+		xmlns:s="library://ns.adobe.com/flex/spark"
+		xmlns:parsley="http://www.spicefactory.org/parsley"
+		xmlns:flextras="http://www.flextras.com/mxml"
+		xmlns:presentation="com.touchpointlabs.eb.presentation.*"
+		xmlns:hamcrest="http://hamcrest.org/2009/mxml"
+		xmlns:matchers="org.flexunit.internals.matchers.*"
+		xmlns:local="*"
+		title="New Transaction"
+		creationComplete="presentationModel.populateUserSelections();"
+		xmlns:ns="http://ns.adobe.com/cairngorm"
+		xmlns:mx="library://ns.adobe.com/flex/mx">
+
+	<s:layout>
+		<s:VerticalLayout/>
+	</s:layout>
+
+
+	<s:Label text="Amount"/>
+	<s:TextInput id="amountInput"
+				 softKeyboardType="number"
+				 returnKeyLabel="done"
+				 restrict="0-9."/>
+
+
+	<s:Label text="Name"/>
+	<s:TextInput id="nameInput"/>
+
+
+	<s:Label text="Vendor"/>
+	<flextras:AutoCompleteComboBoxMobile id="vendorList"
+										 dataProvider="{presentationModel.vendors}"
+										 labelField="name"
+										 requestedRowCount="7"/>
+
+
+	<s:Label text="Envelope"/>
+	<flextras:DropDownList id="envelopeList"
+						   dataProvider="{presentationModel.envelopes}"
+						   labelField="name"
+						   width="100%"/>
+
+
+	<s:Label text="Date of Transaction"/>
+	<presentation:DateInput id="dateInput"/>
+
+
+	<s:Button label="Save"
+			  click="recordTransaction(event)"
+			  enabled="{validateForm(validation.isValid, vendorList.textInput.text, vendorList.selectedItem)}"/>
+
+
+
+	<fx:Declarations>
+
+		<parsley:Configure/>
+
+		<ns:ValidatorGroup id="validation">
+			<ns:validators>
+				<mx:CurrencyValidator source="{amountInput}"
+									  property="text"
+									  triggerEvent="change"/>
+
+				<mx:StringValidator source="{nameInput}"
+									property="text"
+									minLength="1"
+									triggerEvent="change"/>
+
+				<mx:Validator source="{envelopeList}"
+							  property="selectedItem"/>
+
+				<mx:Validator source="{dateInput}"
+							  property="userEnteredDate"
+							  triggerEvent="change"/>
+			</ns:validators>
+		</ns:ValidatorGroup>
+
+	</fx:Declarations>
+
+
+	<fx:Script>
+		<![CDATA[
+			[Inject]
+			[Bindable]
+			public var presentationModel : RecordATransactionPM;
+
+			/*
+			TODO (Future) - consider use of Flextras combo box, or find a way to fix this problem
+			note: Unfortunately on the AutoCompleteComboBoxMobile there does not seem to be a way to find out if the user has selected an item or entered text so have to
+			function bind to both the text and the selectedItem, don't really like this, will look into this in future iteration
+			*/
+			private function validateForm(validationIsValid : Boolean, text : String, selectedItem : Object) : Boolean
+			{
+				return (validationIsValid && ((text.length > 0) || (selectedItem != null)));
+			}
+
+
+			protected function recordTransaction(event : MouseEvent) : void
+			{
+				presentationModel.recordTransaction(envelopeList.selectedItem, nameInput.text, amountInput.text, vendorList.selectedItem, vendorList.textInput.text, dateInput.userEnteredDate);
+			}
+		]]>
+	</fx:Script>
+</s:View>

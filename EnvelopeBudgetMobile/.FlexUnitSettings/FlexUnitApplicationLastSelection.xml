@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="EnvelopeBudget">
+<testsuite name="com.touchpointlabs.eb.domain.service:RecordedTransactionServiceImplTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.vo:MoneyTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.dao:ORMRecordedTransactionDAOTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.entity:ORMEnvelopeTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.entity:ORMRecordedTransactionTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.presentation:RecordATransactionPMTest" type="testcaseclass"/>
+</testsuite>
+<portNumber value="60030" />
+</testrun>
