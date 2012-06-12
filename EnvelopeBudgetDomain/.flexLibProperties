@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.Envelope"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.PaymentMethod"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.Transaction"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.ReoccuringTransaction"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.RecordedTransaction"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.Budget"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.Vendor"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.PredictedTransaction"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.Entity"/>
+    <classEntry path="com.touchpointlabs.eb.domain.service.RecordedTransactionService"/>
+    <classEntry path="com.touchpointlabs.eb.domain.service.EnvelopeService"/>
+    <classEntry path="com.touchpointlabs.eb.domain.service.VendorService"/>
+    <classEntry path="com.touchpointlabs.eb.domain.vo.Money"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>
