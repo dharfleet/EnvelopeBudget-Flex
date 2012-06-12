@@ -49,17 +49,6 @@ package com.touchpointlabs.sforce.rest.date
 	{
 
 		/**
-		 * converts an ActionScript Date instance to a String formatted in ISO 8601 format
-		 * @param date to convert
-		 * @return a string in ISO 8601 format
-		 * */
-		public static function toISO8601(date : Date) : String
-		{
-			return formatter.format(date);
-		}
-
-
-		/**
 		 * Converts an ISO8601 formated date to an ActionScript date
 		 * @param iso8601Date a string in ISO 8601 format
 		 * @return an ActionScript date instance with values set as per input
@@ -74,7 +63,19 @@ package com.touchpointlabs.sforce.rest.date
 		}
 
 
+		/**
+		 * converts an ActionScript Date instance to a String formatted in ISO 8601 format
+		 * @param date to convert
+		 * @return a string in ISO 8601 format
+		 * */
+		public static function toISO8601(date : Date) : String
+		{
+			return formatter.format(date);
+		}
+
+
 		private static const formatter : DateTimeFormatter = new DateTimeFormatter();
+
 
 		// static initialization block
 		{
