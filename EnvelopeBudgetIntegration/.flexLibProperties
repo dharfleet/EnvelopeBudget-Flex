@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.touchpointlabs.eb.domain.service.EnvelopeServiceImpl"/>
+    <classEntry path="com.touchpointlabs.eb.domain.service.RecordedTransactionServiceImpl"/>
+    <classEntry path="com.touchpointlabs.eb.domain.service.VendorServiceImpl"/>
+    <classEntry path="com.touchpointlabs.eb.integration.dao.EnvelopeDao"/>
+    <classEntry path="com.touchpointlabs.eb.integration.dao.RecordedTransactionDao"/>
+    <classEntry path="com.touchpointlabs.eb.integration.dao.VendorDao"/>
+    <classEntry path="com.touchpointlabs.eb.domain.service.Service"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

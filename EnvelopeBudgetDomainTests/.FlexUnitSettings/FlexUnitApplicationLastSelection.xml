@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="EnvelopeBudgetDomainTests">
+<testsuite name="com.touchpointlabs.eb.domain:DomainSuite" type="testsuiteclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.vo:MoneyTest" type="testcaseclass"/>
+</testsuite>
+<portNumber value="8765" />
+</testrun>

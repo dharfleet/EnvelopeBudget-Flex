@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="EnvelopeBudgetIntegrationTests">
+<testsuite name="com.touchpointlabs.eb.domain.service:IntegrationSuite" type="testsuiteclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.service:EnvelopeServiceImplTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.service:RecordedTransactionServiceImplTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.service:VendorServiceImplTest" type="testcaseclass"/>
+</testsuite>
+<portNumber value="8765" />
+</testrun>
