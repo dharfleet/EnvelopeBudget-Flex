@@ -2,6 +2,7 @@
 <flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
   <includeClasses>
     <classEntry path="com.touchpointlabs.eb.utility.LoggingSupport"/>
+    <classEntry path="mx.rpc.test.EqualityUtil"/>
   </includeClasses>
   <includeResources/>
   <namespaceManifests/>
