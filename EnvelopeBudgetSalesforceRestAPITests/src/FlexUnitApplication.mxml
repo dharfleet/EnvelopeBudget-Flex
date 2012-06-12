@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!-- This is an auto generated file and is not intended for modification. -->
+
+<s:WindowedApplication xmlns:fx="http://ns.adobe.com/mxml/2009"
+					   xmlns:s="library://ns.adobe.com/flex/spark"
+					   xmlns:mx="library://ns.adobe.com/flex/mx"
+					   xmlns:flexui="flexunit.flexui.*"
+					   creationComplete="onCreationComplete()" showStatusBar="false">
+	<fx:Script>
+		<![CDATA[
+			import com.touchpointlabs.sforce.rest.remote.SoqlQueryResultEventTest;
+			import com.touchpointlabs.sforce.rest.remote.SoqlQueryRemoteServiceTest;
+			import com.touchpointlabs.sforce.rest.remote.RecordEventTest;
+			import com.touchpointlabs.sforce.rest.remote.GetRecordRemoteServiceTest;
+			import com.touchpointlabs.sforce.rest.remote.CreateRecordRemoteServiceTest;
+			import com.touchpointlabs.sforce.rest.date.SalesforceDateTranslatorTest;
+			import com.touchpointlabs.sforce.rest.SalesforceOrgTest;
+			import com.touchpointlabs.sforce.rest.RestRemoteServiceTest;
+			import com.touchpointlabs.sforce.rest.JsonResultEventTest;
+			import com.touchpointlabs.eb.integration.api.vendor.ListVendorsCommandTest;
+			import com.touchpointlabs.eb.integration.api.vendor.GetVendorRemoteServiceTest;
+			import com.touchpointlabs.eb.integration.api.vendor.GetVendorCommandTest;
+			import com.touchpointlabs.eb.integration.api.vendor.CreateVendorCommandTest;
+			import com.touchpointlabs.eb.integration.api.recordedtransactions.ListRecordedTransactionsCommandTest;
+			import com.touchpointlabs.eb.integration.api.recordedtransactions.GetRecordedTransactionCommandTest;
+			import com.touchpointlabs.eb.integration.api.recordedtransactions.CreateRecordedTransactionCommandTest;
+			import com.touchpointlabs.eb.integration.api.envelope.ListEnvelopesCommandTest;
+			import com.touchpointlabs.eb.integration.api.envelope.GetEnvelopeRemoteServiceTest;
+			import com.touchpointlabs.eb.integration.api.envelope.GetEnvelopeCommandTest;
+			import com.touchpointlabs.eb.integration.api.envelope.CreateEnvelopeCommandTest;
+			import com.touchpointlabs.eb.integration.api.authn.UserCredentialsTest;
+			import com.touchpointlabs.eb.integration.api.authn.LoginCommandTest;
+			import com.touchpointlabs.eb.integration.api.ContextKeyNotFoundFaultEventTest;
+			import com.touchpointlabs.eb.integration.api.CommandFactoryTest;
+			import com.touchpointlabs.eb.integration.api.CommandContextTest;
+			import com.touchpointlabs.eb.domain.entity.SalesforceVendorTest;
+			import com.touchpointlabs.eb.domain.entity.SalesforceRecordedTransactionTest;
+			import com.touchpointlabs.eb.domain.entity.SalesforceEnvelopeTest;
+			import com.touchpointlabs.eb.dao.SfVendorDaoTest;
+			import com.touchpointlabs.eb.dao.SfRecordedTransactionDaoTest;
+			import com.touchpointlabs.eb.dao.SfEnvelopeDaoTest;
+			
+			public function currentRunTestSuite():Array
+			{
+				var testsToRun:Array = new Array();
+				testsToRun.push(com.touchpointlabs.eb.dao.SfEnvelopeDaoTest);
+				testsToRun.push(com.touchpointlabs.eb.dao.SfRecordedTransactionDaoTest);
+				testsToRun.push(com.touchpointlabs.eb.dao.SfVendorDaoTest);
+				testsToRun.push(com.touchpointlabs.eb.domain.entity.SalesforceEnvelopeTest);
+				testsToRun.push(com.touchpointlabs.eb.domain.entity.SalesforceRecordedTransactionTest);
+				testsToRun.push(com.touchpointlabs.eb.domain.entity.SalesforceVendorTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.CommandContextTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.CommandFactoryTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.ContextKeyNotFoundFaultEventTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.authn.LoginCommandTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.authn.UserCredentialsTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.envelope.CreateEnvelopeCommandTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.envelope.GetEnvelopeCommandTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.envelope.GetEnvelopeRemoteServiceTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.envelope.ListEnvelopesCommandTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.recordedtransactions.CreateRecordedTransactionCommandTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.recordedtransactions.GetRecordedTransactionCommandTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.recordedtransactions.ListRecordedTransactionsCommandTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.vendor.CreateVendorCommandTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.vendor.GetVendorCommandTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.vendor.GetVendorRemoteServiceTest);
+				testsToRun.push(com.touchpointlabs.eb.integration.api.vendor.ListVendorsCommandTest);
+				testsToRun.push(com.touchpointlabs.sforce.rest.JsonResultEventTest);
+				testsToRun.push(com.touchpointlabs.sforce.rest.RestRemoteServiceTest);
+				testsToRun.push(com.touchpointlabs.sforce.rest.SalesforceOrgTest);
+				testsToRun.push(com.touchpointlabs.sforce.rest.date.SalesforceDateTranslatorTest);
+				testsToRun.push(com.touchpointlabs.sforce.rest.remote.CreateRecordRemoteServiceTest);
+				testsToRun.push(com.touchpointlabs.sforce.rest.remote.GetRecordRemoteServiceTest);
+				testsToRun.push(com.touchpointlabs.sforce.rest.remote.RecordEventTest);
+				testsToRun.push(com.touchpointlabs.sforce.rest.remote.SoqlQueryRemoteServiceTest);
+				testsToRun.push(com.touchpointlabs.sforce.rest.remote.SoqlQueryResultEventTest);
+				return testsToRun;
+			}
+			
+			
+			private function onCreationComplete():void
+			{
+				testRunner.runWithFlexUnit4Runner(currentRunTestSuite(), "EnvelopeBudgetSalesforceRestAPITests");
+			}
+			
+		]]>
+	</fx:Script>
+	<fx:Declarations>
+		<!-- Place non-visual elements (e.g., services, value objects) here -->
+	</fx:Declarations>
+	<flexui:FlexUnitTestRunnerUI id="testRunner" portNumber="8765">
+	</flexui:FlexUnitTestRunnerUI>
+</s:WindowedApplication>

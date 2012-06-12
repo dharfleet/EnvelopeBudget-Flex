@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<flexLibProperties includeAllClasses="true" useMultiPlatformConfig="false" version="3">
+  <includeClasses>
+    <classEntry path="com.touchpointlabs.eb.integration.api.authn.JsonLoginCommand"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.authn.UserCredentials"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.SalesforceOrg"/>
+    <classEntry path="com.touchpointlabs.eb.integration.old.implementedelsewhere.SObjectCommandOld"/>
+    <classEntry path="com.touchpointlabs.eb.integration.old.implementedelsewhere.ListVendorsCommandOld"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.SalesforceVendor"/>
+    <classEntry path="com.touchpointlabs.eb.integration.old.implementedelsewhere.ListEnvelopesCommandOld"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.SalesforceEnvelope"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.SalesforceRecordedTransaction"/>
+    <classEntry path="com.touchpointlabs.eb.integration.old.implementedelsewhere.ListRecordedTransactionsCommandOld"/>
+    <classEntry path="com.touchpointlabs.eb.integration.old.implementedelsewhere.CreateVendorCommandOld"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.CommandContext"/>
+    <classEntry path="com.touchpointlabs.eb.integration.old.implementedelsewhere.GetVendorCommandOld"/>
+    <classEntry path="com.touchpointlabs.eb.integration.old.implementedelsewhere.CreateRecordedTransactionCommandOld"/>
+    <classEntry path="com.touchpointlabs.eb.integration.old.implementedelsewhere.GetRecordedTransactionCommandOld"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.JsonRestRemoteService"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.GetRecordRemoteService"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.JsonResultEvent"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.GetVendorRemoteService"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.GetVendorCommand"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.RecordEvent"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.GetEnvelopeRemoteService"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.GetEnvelopeCommand"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.SoqlQueryRemoteService"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.ListEnvelopesCommand"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.SoqlQueryResultEvent"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.ListVendorsCommand"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.recordedtransactions.ListRecordedTransactionsCommand"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.recordedtransactions.GetRecordedTransactionCommand"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.CreateRecordRemoteService"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.CreateVendorCommand"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.CreateEnvelopeCommand"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.recordedtransactions.CreateRecordedTransactionCommand"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.ContextKeyNotFoundFaultEvent"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.date.SalesforceDateTranslator"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.date.SalesforceDateTranslatorTest"/>
+    <classEntry path="com.touchpointlabs.eb.dao.SfEnvelopeDao"/>
+    <classEntry path="com.touchpointlabs.eb.dao.SfVendorDao"/>
+    <classEntry path="com.touchpointlabs.eb.dao.SfRecordedTransactionDao"/>
+    <classEntry path="com.touchpointlabs.eb.dao.SfRecordedTransactionDaoTest"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.SalesforceEnvelopeTest"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.SalesforceRecordedTransactionTest"/>
+    <classEntry path="com.touchpointlabs.eb.domain.entity.SalesforceVendorTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.authn.LoginCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.authn.UserCredentialsTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.CreateEnvelopeCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.GetEnvelopeCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.GetEnvelopeRemoteServiceTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.ListEnvelopesCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.recordedtransactions.CreateRecordedTransactionCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.recordedtransactions.GetRecordedTransactionCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.recordedtransactions.ListRecordedTransactionsCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.CreateVendorCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.GetVendorCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.GetVendorRemoteServiceTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.ListVendorsCommandTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.CommandContextTest"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.ContextKeyNotFoundFaultEventTest"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.CreateRecordRemoteServiceTest"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.GetRecordRemoteServiceTest"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.RecordEventTest"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.SoqlQueryRemoteServiceTest"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.remote.SoqlQueryResultEventTest"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.JsonResultEventTest"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.RestRemoteServiceTest"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.SalesforceOrgTest"/>
+    <classEntry path="com.touchpointlabs.sforce.rest.RestRemoteService"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.authn.LoginCommand"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.CreateEnvelopeCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.GetEnvelopeCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.envelope.ListEnvelopesCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.recordedtransactions.CreateRecordedTransactionCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.recordedtransactions.ListRecordedTransactionsCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.CreateVendorCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.GetVendorCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.vendor.ListVendorsCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.recordedtransactions.GetRecordedTransactionCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.CommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.integration.api.authn.LoginCommandFactory"/>
+    <classEntry path="com.touchpointlabs.eb.dao.SfRecordedTransactionDaoParsleyHack"/>
+  </includeClasses>
+  <includeResources/>
+  <namespaceManifests/>
+</flexLibProperties>

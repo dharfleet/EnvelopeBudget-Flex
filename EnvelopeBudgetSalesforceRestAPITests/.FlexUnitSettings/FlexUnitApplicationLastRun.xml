@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="EnvelopeBudgetSalesforceRestAPITests">
+<testsuite name="com.touchpointlabs.eb.dao:SfEnvelopeDaoTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.dao:SfRecordedTransactionDaoTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.dao:SfVendorDaoTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.entity:SalesforceEnvelopeTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.entity:SalesforceRecordedTransactionTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.domain.entity:SalesforceVendorTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api:CommandContextTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api:CommandFactoryTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api:ContextKeyNotFoundFaultEventTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.authn:LoginCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.authn:UserCredentialsTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.envelope:CreateEnvelopeCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.envelope:GetEnvelopeCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.envelope:GetEnvelopeRemoteServiceTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.envelope:ListEnvelopesCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.recordedtransactions:CreateRecordedTransactionCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.recordedtransactions:GetRecordedTransactionCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.recordedtransactions:ListRecordedTransactionsCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.vendor:CreateVendorCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.vendor:GetVendorCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.vendor:GetVendorRemoteServiceTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.integration.api.vendor:ListVendorsCommandTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.sforce.rest:JsonResultEventTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.sforce.rest:RestRemoteServiceTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.sforce.rest:SalesforceOrgTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.sforce.rest.date:SalesforceDateTranslatorTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.sforce.rest.remote:CreateRecordRemoteServiceTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.sforce.rest.remote:GetRecordRemoteServiceTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.sforce.rest.remote:RecordEventTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.sforce.rest.remote:SoqlQueryRemoteServiceTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.sforce.rest.remote:SoqlQueryResultEventTest" type="testcaseclass"/>
+</testsuite>
+<portNumber value="8765" />
+</testrun>

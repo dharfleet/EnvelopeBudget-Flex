@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="EnvelopeBudgetPresentationTests">
+<testsuite name="com.touchpointlabs.eb.presentation:PresentationSuite" type="testsuiteclass"/>
+<testsuite name="com.touchpointlabs.eb.presentation:RecordATransactionPMTest" type="testcaseclass"/>
+<testsuite name="com.touchpointlabs.eb.presentation:RecordedTransactionPMTest" type="testcaseclass"/>
+</testsuite>
+<portNumber value="8765" />
+</testrun>

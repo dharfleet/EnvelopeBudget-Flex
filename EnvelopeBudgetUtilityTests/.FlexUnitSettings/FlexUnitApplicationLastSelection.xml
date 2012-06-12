@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testrun name="" >
+<testsuite  name="Default Test Suite" project="EnvelopeBudgetUtilityTests">
+<testsuite name="com.touchpointlabs:UtilitySuite" type="testsuiteclass"/>
+<testsuite name="com.touchpointlabs.collections:ListUtilsTest" type="testcaseclass"/>
+</testsuite>
+<portNumber value="8765" />
+</testrun>
